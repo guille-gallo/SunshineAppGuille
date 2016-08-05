@@ -1,6 +1,9 @@
 package com.example.android.sunshine;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -35,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+<<<<<<< HEAD
             startActivity(new Intent(this, SettingsActivity.class));
+=======
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
             return true;
         }
 

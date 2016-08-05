@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
         android:name=".DetailActivity"
         android:label="@string/title_activity_detail"
         android:parentActivityName=".MainActivity"
@@ -34,11 +35,20 @@
             android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
+=======
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.sunshine.MainActivity" />
         </activity>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
     </application>
 
 </manifest>

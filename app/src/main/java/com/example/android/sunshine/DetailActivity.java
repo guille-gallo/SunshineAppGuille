@@ -33,7 +33,10 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
         setContentView(R.layout.activity_detail);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -67,7 +70,10 @@ public class DetailActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+<<<<<<< HEAD
             startActivity(new Intent(this, SettingsActivity.class));
+=======
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
             return true;
         }
 
@@ -83,13 +89,20 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         @Override
+<<<<<<< HEAD
         public View onCreateView(LayoutInflater inflater,
                                  ViewGroup container,
+=======
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
                                  Bundle savedInstanceState) {
 
             View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
             return rootView;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
     }
 }
