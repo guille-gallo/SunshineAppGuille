@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Sunshine</string>
-<<<<<<< HEAD
 
     <string name="action_settings">Settings</string>
     <string name="action_refresh">Refresh</string>
@@ -34,9 +33,4 @@
     <string name="pref_units_imperial" translatable="false">imperial</string>
 
 
-=======
-    <string name="action_settings">Settings</string>
-    <string name="action_refresh">Refresh</string>
-    <string name="title_activity_detail">DetailActivity</string>
->>>>>>> 6f6fad801956740da2c07c22569f92df5145f8e0
 </resources>
