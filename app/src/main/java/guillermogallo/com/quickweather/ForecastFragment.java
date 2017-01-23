@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.sunshine;
+package guillermogallo.com.quickweather;
 
 import android.content.Context;
 import android.content.Intent;
@@ -34,6 +34,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.android.guillermogallo.BuildConfig;
+import com.example.android.guillermogallo.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -123,7 +126,7 @@ public class ForecastFragment extends Fragment {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
 
         // If there's no value stored, we fallback to the default location
-        String location = prefs.getString(getString(R.string.pref_location_key), getString(R.string.pref_location_default));
+        String location = prefs.getString(getString(R.string.pref_location_key),getString(R.string.pref_location_default));
         String temperature = prefs.getString("temperature", "metric");
 
         weatherTask.execute(location, temperature);
@@ -225,6 +228,7 @@ public class ForecastFragment extends Fragment {
                 String day;
                 String description;
                 String highAndLow;
+                String latempe;
 
                 // Get the JSON object representing the day
                 JSONObject dayForecast = weatherArray.getJSONObject(i);
@@ -244,6 +248,7 @@ public class ForecastFragment extends Fragment {
                 // Temperatures are in a child object called "temp".  Try not to name variables
                 // "temp" when working with temperature.  It confuses everybody.
                 JSONObject temperatureObject = dayForecast.getJSONObject(OWM_TEMPERATURE);
+
                 double high = temperatureObject.getDouble(OWM_MAX);
                 double low = temperatureObject.getDouble(OWM_MIN);
 
@@ -283,7 +288,7 @@ public class ForecastFragment extends Fragment {
                 // http://openweathermap.org/API#forecast
                 final String FORECAST_BASE_URL =
                         "http://api.openweathermap.org/data/2.5/forecast/daily?";
-                final String QUERY_PARAM = "q";
+                final String QUERY_PARAM = "id";
                 final String FORMAT_PARAM = "mode";
                 final String UNITS_PARAM = "units";
                 final String DAYS_PARAM = "cnt";

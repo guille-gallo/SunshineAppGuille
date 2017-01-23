@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.sunshine;
+package guillermogallo.com.quickweather;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +31,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.example.android.guillermogallo.R;
 
 public class DetailActivity extends AppCompatActivity {
 
