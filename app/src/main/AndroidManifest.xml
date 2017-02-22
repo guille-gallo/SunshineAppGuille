@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.sunshine">
+    package="guillermogallo.com.quickweather">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="guillermogallo.com.quickweather.MainActivity"
             android:label="@string/app_name"
             >
             <intent-filter>
@@ -21,26 +21,26 @@
             </intent-filter>
         </activity>
         <activity
-        android:name=".DetailActivity"
+        android:name="guillermogallo.com.quickweather.DetailActivity"
         android:label="@string/title_activity_detail"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="guillermogallo.com.quickweather.MainActivity"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.android.sunshine.MainActivity" />
+            android:value="guillermogallo.com.quickweather.MainActivity" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="guillermogallo.com.quickweather.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="guillermogallo.com.quickweather.MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sunshine.MainActivity" />
+                android:value="guillermogallo.com.quickweather.MainActivity" />
         </activity>
         <provider
-            android:authorities="com.example.android.sunshine"
-            android:name=".data.WeatherProvider" />
+            android:authorities="com.example.android.guillermogallo"
+            android:name="guillermogallo.com.quickweather.data.WeatherProvider" />
 
     </application>
 
